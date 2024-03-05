@@ -27,41 +27,12 @@
         <link rel="alternate" type="application/atom+xml" title="Amy Griffis" href="/atom.xml">
         <link rel="alternate" type="application/rss+xml" title="Amy Griffis" href="/rss.xml">
 
-        
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-        <style>
-            /* Workaround for typekit FOUT.
-             * html.js is provided by modernizr and prevents this applying if JS
-             * is disabled (hi Ernie).
-             */
-            html.js body { display: none }
-        </style>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-        
-
-        <script src="https://use.typekit.net/qqo5uin.js"></script>
-        <script>
-            !function() {
-                function reveal() {
-                    // Make sure body is available when this runs.
-                    $(function() {
-                        $('body').fadeIn(300);  // default 400
-                    });
-                }
-                try {
-                    // https://helpx.adobe.com/typekit/using/font-events.html
-                    Typekit.load({
-                        async: true,
-                        active: reveal,
-                        inactive: reveal
-                    });
-                } catch(e) {
-                    reveal();
-                }
-            }();
-        </script>
 
         <!-- photoswipe -->
         <script src="/js/vendor/photoswipe.min.js"></script>
